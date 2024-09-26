@@ -33,18 +33,14 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   </p>
 
                   <p align="justify">
-                    Previously, my research interests included Emotion Analysis in Conversational Systems and Brain­-inspired Intelligence. Currently, I'm working on Continual Learning in Information Extraction and Multi-Modal Large Language Models (MM-LLMs).
-                    In the future, I plan to engage in research related to Continual Learning in LLMs and LLM4Science (e.g., Life Science, Biology, Healthcare,  etc.).
+                    Previously, my research interests included Emotion Analysis in Conversational Systems and Brain­-inspired Intelligence. Currently, I'm working on Continual Learning in Information Extraction and Multi-Modal Large Language Models.
+                    In the future, I plan to engage in research related to Continual Learning in (Large) Foundational Models (FMs) and FMs4Science (e.g., Life Science, Biology, Healthcare,  etc.).
                   </p>
 
                   <p align="justify">
                     I am looking for <font color="red"><strong>cooperation</strong></font>. Contact me if you are interested in the above topics.
                   </p>
 
-
-            <!--       <p align="justify">
-                    I am actively seeking a <font color="red"><strong>postdoctoral research position</strong></font> as well. If you are interested in my experience, please feel free to contact me and let me know.
-                  </p> -->
 
                   <p style="text-align:center">
                     <a href="mailto:bladedancer957@gmail.com">Email</a> &nbsp/&nbsp
@@ -76,6 +72,10 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
 
           <ul>
+            <li><span style="color: gray" size="6px">[2024.09]</span>
+              🎉 One paper: <a href=""><strong>CIDM</strong></a> is accepted by <strong>NeurIPS2024</strong>. 
+            </li>
+
                <li><span style="color: gray" size="6px">[2024.05]</span>
               🎉 Two papers: <a href="https://arxiv.org/abs/2401.13601"><strong>MM-LLMs</strong></a> and <a href="https://aclanthology.org/2024.findings-acl.79/"><strong>WT&WF</strong></a> are accepted by <strong>ACL2024</strong>. See you in Bangkok!
             </li>
@@ -171,12 +171,17 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                 <a href="https://aclanthology.org/2024.findings-acl.79/">[ACL2024]</a>
             </li>
 
+             <li>
+                <strong>Continual Learning in (Large) Foundational Models:</strong>
+                <a href="">[NeurIPS2024]</a>
+            </li>
+
   
 
           <li>
             <strong>Multi-Modal Learning, Multi-Modal Large Language Models:</strong>
             <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547776">[ACM MM2022]</a>
-            , <a href="https://link.springer.com/article/10.1007/s11633-022-1369-5">[MIR2022]</a>, <a href="https://arxiv.org/abs/2406.04350">[ICML2024]</a>, <a href="https://arxiv.org/abs/2401.13601">[ACL2024]</a>
+            , <a href="https://link.springer.com/article/10.1007/s11633-022-1369-5">[MIR2022]</a>, <a href="https://ieeexplore.ieee.org/abstract/document/10219015">[IEEE TMM]</a>, <a href="https://arxiv.org/abs/2406.04350">[ICML2024]</a>, <a href="https://arxiv.org/abs/2401.13601">[ACL2024]</a>, <a href="">[NeurIPS2024]</a>
         </li>
         
           
@@ -204,10 +209,46 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/21.jpg' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?
+                    </papertitle>
+                  </a>
+                  <br /><br />
+                  Jiahua Dong*,
+                  Wenqi Liang*,
+                  Hongliu Li,
+                  <strong>Duzhen Zhang#</strong>,
+                  Meng Cao,
+                  Henhui Ding#,
+                  Salman Khan,
+                  Fahad Khan
+                  <br /><br />
+                  <strong>NeurIPS2024, CCF-A</strong>
+                  <br>
+                  <a href="">Paper</a>&nbsp/&nbsp
+                  <a href="">Code</a>
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+                Custom diffusion models (CDMs) have attracted widespread attention due to their astonishing generative ability for personalized concepts. However, most existing CMDs unreasonably assume that personalized concepts are fixed and cannot change over time. Moreover, they heavily suffer from catastrophic forgetting and concept neglect on old personalized concepts when continually learning a series of new concepts. To address these challenges, we propose a novel Concept-Incremental text-to-image Diffusion Model (CIDM), which can resolve catastrophic forgetting and concept neglect to learn new customization tasks in a concept-incremental manner. Specifically, to surmount the catastrophic forgetting of old concepts, we develop a concept consolidation loss and an elastic weight aggregation module. They can explore task-specific and task-shared knowledge during training, and aggregate all low-rank weights of old concepts based on their contributions during inference. Moreover, in order to address concept neglect, we devise a context-controllable synthesis strategy that leverages expressive regional features and noise estimation to control the contexts of generated images according to user conditions. Experiments verify that our CIDM surpasses existing custom diffusion models.
+                  </details>
+
+                  </p>
+                </td>
+              </tr>
+
                 <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
                   <div class="one">
-                    <img src='images/20.jpg' width="250">
+                    <img src='images/20.png' width="250">
                   </div>
                 </td>
                 <td style="padding:25px;width:70%;vertical-align:middle">
@@ -256,7 +297,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   Chenhui Chu#,
                   Dong Yu
                   <br /><br />
-                  <strong>ACL2024, Findings, Long Paper</strong>
+                  <strong>ACL2024, Findings, Long Paper, Survey</strong>
                   <br>
                   <a href="https://arxiv.org/abs/2401.13601">Paper</a>&nbsp/&nbsp
                   <a href="https://mm-llms.github.io/">Website</a>
@@ -629,7 +670,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                       杜久林#,
                       徐波#
                       <br /><br />
-                      <strong>人工智能</strong>
+                      <strong>人工智能, 综述</strong>
                       <br>
                       <a href="https://kns.cnki.net/kcms2/article/abstract?v=Eo9-C_M6tLkCF-ZWihqs-gCIpgHnxW86iit3wSHNIltOC7iK2Y94zRZ2zS7RvDtEOTn1_qMsCgFzehh8azYcoiZlW30SRWwpSVR8SD-HCNfuKEqQo27Ma6zQVKLtLAqWXXyhin-4VhkB27qAy_cFmQ==&uniplatform=NZKPT&language=CHS">Paper</a>
           
@@ -797,7 +838,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                       Shuncheng Jia,
                       Qingyu Wang
                       <br /><br />
-                      <strong>IJCAI2022, CCF-A</strong>
+                      <strong>IJCAI2022, CCF-A, Survey Track</strong>
                       <br>
                       <a href="https://arxiv.org/abs/2204.07050">Paper</a>
           
