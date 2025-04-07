@@ -95,6 +95,20 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
         <button id="expand-btn" class="expand-btn">Show all</button>
     </ul>
 
+    <script>
+        document.getElementById('expand-btn').addEventListener('click', function() {
+            const collapsedItems = document.getElementById('collapsed-items');
+            const expandBtn = document.getElementById('expand-btn');
+            if (collapsedItems.classList.contains('collapsed')) {
+                collapsedItems.classList.remove('collapsed');
+                expandBtn.textContent = 'Show less';
+            } else {
+                collapsedItems.classList.add('collapsed');
+                expandBtn.textContent = 'Show all';
+            }
+        });
+    </script>
+
 
 
           <table align="center" border="0" cellpadding="10" cellspacing="0" width="100%">
@@ -156,9 +170,10 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             , <a href="https://link.springer.com/article/10.1007/s11633-022-1369-5">[MIR2022]</a>, <a href="https://ieeexplore.ieee.org/abstract/document/10219015">[IEEE TMM]</a>, <a href="https://arxiv.org/abs/2406.04350">[ICML2024]</a>, <a href="https://arxiv.org/abs/2401.13601">[ACL2024]</a>, <a href="https://arxiv.org/abs/2410.17594">[NeurIPS2024]</a>
         </li>
         
-          
 
             </ul>
+
+
 
 
 
