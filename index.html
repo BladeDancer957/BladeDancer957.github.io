@@ -3,9 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
   <title>Duzhen Zhang (张笃振)</title>
-
   <meta name="author" content="Duzhen Zhang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,12 +11,74 @@
   <link rel="icon" type="image/jpg" href="images/avatar.jpg">
 
   <style>
+    /* General Styles for the Table */
+    table {
+      width: 100%;
+      max-width: 800px;
+      border: 0px;
+      border-spacing: 0px;
+      border-collapse: separate;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    /* Button Styles */
+    .expand-btn {
+      cursor: pointer;
+      color: #007BFF;
+      text-decoration: none;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-right: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .expand-btn:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    /* Style for the headings */
+    heading {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Default content visibility - hidden for non-default sections */
     .collapsed {
       display: none;
     }
-    .expand-btn {
-      cursor: pointer;
-      color: blue;
+
+    .publication-content {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .publication-group {
+      margin-top: 20px;
+    }
+
+    .publication-group-header {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    /* Style for publication details section */
+    .publication-content p {
+      margin-left: 20px;
+    }
+
+    .publication-content a {
+      color: #007BFF;
+    }
+
+    .publication-content a:hover {
       text-decoration: underline;
     }
   </style>
@@ -204,7 +264,16 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             </tbody>
       
           </table>
-         
+
+          <!-- Add buttons to toggle between categories -->
+        <div style="text-align:center; margin-bottom: 20px;">
+          <button class="expand-btn" onclick="toggleVisibility('categoryA')">A</button>
+          <button class="expand-btn" onclick="toggleVisibility('categoryB')">B</button>
+          <button class="expand-btn" onclick="toggleVisibility('categoryC')">C</button>
+        </div>
+                 
+
+        <div id="categoryA" class="publication-content">
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -241,6 +310,16 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                     </p>
                   </td>
                 </tr>
+
+
+                </tbody>
+              </table>
+        </div>    
+
+
+        <div id="categoryB" class="publication-content collapsed">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
 
                   <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
@@ -284,6 +363,17 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                 </td>
               </tr>
 
+              </tbody>
+        </table>
+        </div>
+
+
+
+        <div id="categoryC" class="publication-content collapsed">
+          <!-- Content for Category C -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
               <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
                   <div class="one">
@@ -319,7 +409,13 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                 </td>
               </tr>
 
-              <tr>
+
+            </tbody>
+        </table>
+        </div>
+
+
+             <!--  <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
                   <div class="one">
                     <img src='images/21.jpg' width="250">
@@ -1028,7 +1124,26 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                       </td>
                   </tr>
 
-          </table>
+          </table> -->
+
+
+
+        <script>
+          function toggleVisibility(categoryId) {
+            const categories = ['categoryA', 'categoryB', 'categoryC'];
+            categories.forEach(function (id) {
+              const content = document.getElementById(id);
+              if (id === categoryId) {
+                content.classList.remove('collapsed');
+              } else {
+                content.classList.add('collapsed');
+              }
+            });
+          }
+
+          // By default, show category A
+          document.getElementById('categoryA').classList.remove('collapsed');
+        </script>
 
 
           <table
