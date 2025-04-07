@@ -267,9 +267,9 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
           <!-- Add buttons to toggle between categories -->
         <div style="text-align:center; margin-bottom: 20px;">
-          <button class="expand-btn" onclick="toggleVisibility('categoryA')">A</button>
-          <button class="expand-btn" onclick="toggleVisibility('categoryB')">B</button>
-          <button class="expand-btn" onclick="toggleVisibility('categoryC')">C</button>
+          <button class="expand-btn" onclick="toggleVisibility('categoryA')">First Author</button>
+          <button class="expand-btn" onclick="toggleVisibility('categoryB')">Corresponding Author</button>
+          <button class="expand-btn" onclick="toggleVisibility('categoryC')">Other Author</button>
         </div>
                  
 
@@ -312,16 +312,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                 </tr>
 
 
-                </tbody>
-              </table>
-        </div>    
-
-
-        <div id="categoryB" class="publication-content collapsed">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-                  <tr>
+               <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
                   <div class="one">
                     <img src='images/23.jpg' width="250">
@@ -357,6 +348,59 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                       Details
                     </summary>
                 Achieving human-level intelligence requires refining the transition from the fast, intuitive System 1 to the slower, more deliberate System 2 reasoning. While System 1 excels in quick, heuristic decisions, System 2 relies on logical reasoning for more accurate judgments and reduced biases. Foundational Large Language Models (LLMs) excel at fast decision-making but lack the depth for complex reasoning, as they have not yet fully embraced the step-by-step analysis characteristic of true System 2 thinking. Recently, reasoning LLMs like OpenAI's o1/o3 and DeepSeek's R1 have demonstrated expert-level performance in fields such as mathematics and coding, closely mimicking the deliberate reasoning of System 2 and showcasing human-like cognitive abilities. This survey begins with a brief overview of the progress in foundational LLMs and the early development of System 2 technologies, exploring how their combination has paved the way for reasoning LLMs. Next, we discuss how to construct reasoning LLMs, analyzing their features, the core methods enabling advanced reasoning, and the evolution of various reasoning LLMs. Additionally, we provide an overview of reasoning benchmarks, offering an in-depth comparison of the performance of representative reasoning LLMs. Finally, we explore promising directions for advancing reasoning LLMs and maintain a real-time GitHub Repository to track the latest developments. We hope this survey will serve as a valuable resource to inspire innovation and drive progress in this rapidly evolving field.
+                  </details>
+
+                  </p>
+                </td>
+              </tr>
+
+
+
+
+
+
+
+
+
+                </tbody>
+              </table>
+        </div>    
+
+
+        <div id="categoryB" class="publication-content collapsed">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+                 <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/21.jpg' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?
+                    </papertitle>
+                  </a>
+                  <br /><br />
+                  Jiahua Dong*,
+                  Wenqi Liang*,
+                  Hongliu Li#,
+                  <strong>Duzhen Zhang#</strong>,
+                  Meng Cao,
+                  Henghui Ding,
+                  Salman Khan,
+                  Fahad Khan
+                  <br /><br />
+                  <strong>NeurIPS2024, CCF-A</strong>
+                  <br>
+                  <a href="https://arxiv.org/abs/2410.17594">Paper</a>&nbsp/&nbsp
+                  <a href="https://github.com/JiahuaDong/CIFC">Code</a>
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+                Custom diffusion models (CDMs) have attracted widespread attention due to their astonishing generative ability for personalized concepts. However, most existing CMDs unreasonably assume that personalized concepts are fixed and cannot change over time. Moreover, they heavily suffer from catastrophic forgetting and concept neglect on old personalized concepts when continually learning a series of new concepts. To address these challenges, we propose a novel Concept-Incremental text-to-image Diffusion Model (CIDM), which can resolve catastrophic forgetting and concept neglect to learn new customization tasks in a concept-incremental manner. Specifically, to surmount the catastrophic forgetting of old concepts, we develop a concept consolidation loss and an elastic weight aggregation module. They can explore task-specific and task-shared knowledge during training, and aggregate all low-rank weights of old concepts based on their contributions during inference. Moreover, in order to address concept neglect, we devise a context-controllable synthesis strategy that leverages expressive regional features and noise estimation to control the contexts of generated images according to user conditions. Experiments verify that our CIDM surpasses existing custom diffusion models.
                   </details>
 
                   </p>
@@ -415,41 +459,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
         </div>
 
 
-             <!--  <tr>
-                <td style="padding:25px;width:35%;vertical-align:middle">
-                  <div class="one">
-                    <img src='images/21.jpg' width="250">
-                  </div>
-                </td>
-                <td style="padding:25px;width:70%;vertical-align:middle">
-                  <a href="">
-                    <papertitle>How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?
-                    </papertitle>
-                  </a>
-                  <br /><br />
-                  Jiahua Dong*,
-                  Wenqi Liang*,
-                  Hongliu Li#,
-                  <strong>Duzhen Zhang#</strong>,
-                  Meng Cao,
-                  Henghui Ding,
-                  Salman Khan,
-                  Fahad Khan
-                  <br /><br />
-                  <strong>NeurIPS2024, CCF-A</strong>
-                  <br>
-                  <a href="https://arxiv.org/abs/2410.17594">Paper</a>&nbsp/&nbsp
-                  <a href="https://github.com/JiahuaDong/CIFC">Code</a>
-                  <details align="justify">
-                    <summary>
-                      Details
-                    </summary>
-                Custom diffusion models (CDMs) have attracted widespread attention due to their astonishing generative ability for personalized concepts. However, most existing CMDs unreasonably assume that personalized concepts are fixed and cannot change over time. Moreover, they heavily suffer from catastrophic forgetting and concept neglect on old personalized concepts when continually learning a series of new concepts. To address these challenges, we propose a novel Concept-Incremental text-to-image Diffusion Model (CIDM), which can resolve catastrophic forgetting and concept neglect to learn new customization tasks in a concept-incremental manner. Specifically, to surmount the catastrophic forgetting of old concepts, we develop a concept consolidation loss and an elastic weight aggregation module. They can explore task-specific and task-shared knowledge during training, and aggregate all low-rank weights of old concepts based on their contributions during inference. Moreover, in order to address concept neglect, we devise a context-controllable synthesis strategy that leverages expressive regional features and noise estimation to control the contexts of generated images according to user conditions. Experiments verify that our CIDM surpasses existing custom diffusion models.
-                  </details>
-
-                  </p>
-                </td>
-              </tr>
+             <!--  
 
 
                 <tr>
