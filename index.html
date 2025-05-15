@@ -921,12 +921,6 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
 
 
-
-
-
-
-
-
                 </tbody>
               </table>
         </div>    
@@ -939,8 +933,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
               <h3 style="margin-left:25px; margin-top:10px;">Conference Paper</h3>
 
-
-                <tr>
+              
+       <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
                   <div class="one">
                     <img src='images/26.jpg' width="250">
@@ -958,7 +952,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   Xiuyi Chen,
                   Chenhui Chu
                   <br /><br />
-                  <strong>ACL2025, Findings, Long Paper</strong>
+     <!--              <strong>ACL2025, Findings, Long Paper</strong> -->
+                  <strong>ACL2025 findings</strong>
                   <br>
                   <a href="">Paper</a>&nbsp/&nbsp
                   <a href="">Code</a>
@@ -974,7 +969,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
               </tr>
 
 
-                 <tr>
+                <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
                   <div class="one">
                     <img src='images/21.jpg' width="250">
@@ -995,7 +990,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   Salman Khan,
                   Fahad Khan
                   <br /><br />
-                  <strong>NeurIPS2024, CCF-A</strong>
+      <!--             <strong>NeurIPS2024, CCF-A</strong> -->
+                      <strong>NeurIPS2024</strong>
                   <br>
                   <a href="https://openreview.net/forum?id=O4RCFjVUBJ">Paper</a>&nbsp/&nbsp
                   <a href="https://github.com/JiahuaDong/CIFC">Code</a>
@@ -1009,6 +1005,11 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   </p>
                 </td>
               </tr>
+
+
+
+         
+
 
 
                 <tr>
@@ -1028,7 +1029,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   Xiuyi Chen,
                   Chenhui Chu
                   <br /><br />
-                  <strong>ACL2024, Findings, Short Paper</strong>
+        <!--           <strong>ACL2024, Findings, Short Paper</strong> -->
+                  <strong>ACL2024 findings</strong>
                   <br>
                   <a href="https://aclanthology.org/2024.findings-acl.79/">Paper</a>&nbsp/&nbsp
                   <a href="https://github.com/ku-nlp/CNER_WT-WF">Code</a>
@@ -1076,7 +1078,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   Le Song, 
                   Xiuying Chen#
                   <br /><br />
-                  <strong>ACL2025, Findings, Long Paper</strong>
+       <!--            <strong>ACL2025, Findings, Long Paper</strong> -->
+                  <strong>ACL2025 findings</strong>
                   <br>
                   <a href="https://arxiv.org/abs/2502.12988">Paper</a>&nbsp/&nbsp
                   <a href="">Code</a>
@@ -1085,42 +1088,6 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                       Details
                     </summary>
                 Previous approaches to persona simulation large language models (LLMs) have typically relied on learning basic biographical information, or using limited role-play dialogue datasets to capture a character's responses. However, a holistic representation of an individual goes beyond surface-level facts or conversations to deeper thoughts and thinking. In this work, we introduce CharacterBot, a model designed to replicate both the linguistic patterns and distinctive thought processes of a character. Using Lu Xun, a renowned Chinese writer, as a case study, we propose four training tasks derived from his 17 essay collections. These include a pre-training task focused on mastering external linguistic structures and knowledge, as well as three fine-tuning tasks: multiple-choice question answering, generative question answering, and style transfer, each aligning the LLM with Lu Xun's internal ideation and writing style. To optimize learning across these tasks, we introduce a CharLoRA parameter updating mechanism, where a general linguistic style expert collaborates with other task-specific experts to better study both the language style and the understanding of deeper thoughts. We evaluate CharacterBot on three tasks for linguistic accuracy and opinion comprehension, demonstrating that it significantly outperforms the baselines on our adapted metrics. We hope that this work inspires future research on deep character persona simulation LLM.
-                  </details>
-
-                  </p>
-                </td>
-              </tr>
-
-
-              <tr>
-                <td style="padding:25px;width:35%;vertical-align:middle">
-                  <div class="one">
-                    <img src='images/22.jpg' width="250">
-                  </div>
-                </td>
-                <td style="padding:25px;width:70%;vertical-align:middle">
-                  <a href="">
-                    <papertitle>Lifelong Learning of Large Language Model based Agents: A Roadmap</papertitle>
-                  </a>
-                  <br /><br />
-                  Junhao Zheng*,
-                  Chengming Shi*,
-                  Xidi Cai*,
-                  Qiuke Li*,
-                  <strong>Duzhen Zhang</strong>,
-                  Chenxing Li,
-                  Dong Yu,
-                  Qianli Ma#
-                  <br /><br />
-                  <strong>Preprint Under Review, Survey</strong>
-                  <br>
-                  <a href="https://arxiv.org/abs/2501.07278">Paper</a>&nbsp/&nbsp
-                  <a href="https://github.com/qianlima-lab/awesome-lifelong-llm-agent">Code</a>
-                  <details align="justify">
-                    <summary>
-                      Details
-                    </summary>
-                Lifelong learning, also known as continual or incremental learning, is a crucial component for advancing Artificial General Intelligence (AGI) by enabling systems to continuously adapt in dynamic environments. While large language models (LLMs) have demonstrated impressive capabilities in natural language processing, existing LLM agents are typically designed for static systems and lack the ability to adapt over time in response to new challenges. This survey is the first to systematically summarize the potential techniques for incorporating lifelong learning into LLM-based agents. We categorize the core components of these agents into three modules: the perception module for multimodal input integration, the memory module for storing and retrieving evolving knowledge, and the action module for grounded interactions with the dynamic environment. We highlight how these pillars collectively enable continuous adaptation, mitigate catastrophic forgetting, and improve long-term performance. This survey provides a roadmap for researchers and practitioners working to develop lifelong learning capabilities in LLM agents, offering insights into emerging trends, evaluation metrics, and application scenarios.
                   </details>
 
                   </p>
@@ -1148,7 +1115,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   Wei Liang#, 
                   Dong Yu#
                   <br /><br />
-                  <strong>ICML2024, CCF-A</strong>
+ <!--                  <strong>ICML2024, CCF-A</strong> -->
+                  <strong>ICML2024</strong>
                   <br>
                   <a href="https://proceedings.mlr.press/v235/xu24p.html">Paper</a>&nbsp/&nbsp
                   <a href="https://sites.google.com/view/icml24-ppae">Project</a>
@@ -1182,7 +1150,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   Tielin Zhang#,
                   Bo Xu#
                   <br /><br />
-                  <strong>NeurIPS2023, CCF-A</strong>
+  <!--                 <strong>NeurIPS2023, CCF-A</strong> -->
+                 <strong>NeurIPS2023</strong>
                   <br>
                   <a href="https://openreview.net/forum?id=LdvVd0bNyO">Paper</a>
       
@@ -1191,38 +1160,6 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                       Details
                     </summary>
                     Neural ordinary differential equations (ODEs) are widely recognized as the standard for modeling physical mechanisms, which help to perform approximate inference in unknown physical or biological environments. In partially observable (PO) environments, how to infer unseen information from raw observations puzzled the agents. By using a recurrent policy with a compact context, context-based reinforcement learning provides a flexible way to extract unobservable information from historical transitions. To help the agent extract more dynamics-related information, we present a novel ODE-based recurrent model combines with model-free reinforcement learning (RL) framework to solve partially observable Markov decision processes (POMDPs). We experimentally demonstrate the efficacy of our methods across various PO continuous control and meta-RL tasks. Furthermore, our experiments illustrate that our method is robust against irregular observations, owing to the ability of ODEs to model irregularly-sampled time series.                
-                  </details>
-                </td>
-              </tr>
-
-
-
-                  <tr>
-                <td style="padding:25px;width:35%;vertical-align:middle">
-                  <div class="one">
-                    <img src='images/16.png' width="250">
-                  </div>
-                </td>
-                <td style="padding:25px;width:70%;vertical-align:middle">
-                  <a href="">
-                    <papertitle>Fourier or Wavelet bases as counterpart self-attention in spikformer for efficient visual classification
-                    </papertitle>
-                  </a>
-                  <br /><br />
-                  Qingyu Wang,
-                  Duzhen Zhang,
-                  Tielin Zhang#,
-                  Bo Xu#
-                  <br /><br />
-                  <strong>Frontiers in Neuroscience, CAS-Q3, JCR-Q2</strong>
-                  <br>
-                  <a href="https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1516868/full">Paper</a>
-      
-                  <details align="justify">
-                    <summary>
-                      Details
-                    </summary>
-                    Energy-efficient spikformer has been proposed by integrating the biologically plausible spiking neural network (SNN) and artificial transformer, whereby the spiking self-attention (SSA) is used to achieve both higher accuracy and lower computational cost. However, it seems that self-attention is not always necessary, especially in sparse spike-form calculation manners. In this article, we innovatively replace vanilla SSA (using dynamic bases calculating from Query and Key) with spike-form Fourier transform, wavelet transform, and their combinations (using fixed triangular or wavelets bases), based on a key hypothesis that both of them use a set of basis functions for information transformation. Hence, the Fourier-or-Wavelet-based spikformer (FWformer) is proposed and verified in visual classification tasks, including both static image and event-based video datasets. The FWformer can achieve comparable or even higher accuracies (0.4%–1.5%), higher running speed (9%–51% for training and 19%–70% for inference), reduced theoretical energy consumption (20%–25%), and reduced graphic processing unit (GPU) memory usage (4%–26%), compared to the standard spikformer. Our result indicates the continuous refinement of new transformers that are inspired either by biological discovery (spike-form), or information theory (Fourier or Wavelet transform), is promising.
                   </details>
                 </td>
               </tr>
@@ -1248,7 +1185,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                       <strong>Duzhen Zhang</strong>,
                       Bo Xu#
                       <br /><br />
-                      <strong>AAAI2023, CCF-A</strong>
+     <!--                  <strong>AAAI2023, CCF-A</strong> -->
+                           <strong>AAAI2023</strong>
                       <br>
                       <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25081">Paper</a>
           
@@ -1281,7 +1219,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                       Shuang Xu,
                       Bo Xu
                       <br /><br />
-                      <strong>ACM MM2022, CCF-A</strong>
+      <!--                 <strong>ACM MM2022, CCF-A</strong> -->
+                          <strong>ACM MM2022</strong>
                       <br>
                       <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3547776">Paper</a>
           
@@ -1296,6 +1235,84 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
 
         <h3 style="margin-left:25px; margin-top:10px;">Journal Paper</h3>
+
+
+
+
+              <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/22.jpg' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>Lifelong Learning of Large Language Model based Agents: A Roadmap</papertitle>
+                  </a>
+                  <br /><br />
+                  Junhao Zheng*,
+                  Chengming Shi*,
+                  Xidi Cai*,
+                  Qiuke Li*,
+                  <strong>Duzhen Zhang</strong>,
+                  Chenxing Li,
+                  Dong Yu,
+                  Qianli Ma#
+                  <br /><br />
+           <!--        <strong>Preprint Under Review, Survey</strong> -->
+                    <strong>Preprint Under Review</strong>
+                  <br>
+                  <a href="https://arxiv.org/abs/2501.07278">Paper</a>&nbsp/&nbsp
+                  <a href="https://github.com/qianlima-lab/awesome-lifelong-llm-agent">Code</a>
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+                Lifelong learning, also known as continual or incremental learning, is a crucial component for advancing Artificial General Intelligence (AGI) by enabling systems to continuously adapt in dynamic environments. While large language models (LLMs) have demonstrated impressive capabilities in natural language processing, existing LLM agents are typically designed for static systems and lack the ability to adapt over time in response to new challenges. This survey is the first to systematically summarize the potential techniques for incorporating lifelong learning into LLM-based agents. We categorize the core components of these agents into three modules: the perception module for multimodal input integration, the memory module for storing and retrieving evolving knowledge, and the action module for grounded interactions with the dynamic environment. We highlight how these pillars collectively enable continuous adaptation, mitigate catastrophic forgetting, and improve long-term performance. This survey provides a roadmap for researchers and practitioners working to develop lifelong learning capabilities in LLM agents, offering insights into emerging trends, evaluation metrics, and application scenarios.
+                  </details>
+
+                  </p>
+                </td>
+              </tr>
+
+
+
+
+
+
+                  <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/16.png' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>Fourier or Wavelet bases as counterpart self-attention in spikformer for efficient visual classification
+                    </papertitle>
+                  </a>
+                  <br /><br />
+                  Qingyu Wang,
+                  Duzhen Zhang,
+                  Tielin Zhang#,
+                  Bo Xu#
+                  <br /><br />
+           <!--        <strong>Frontiers in Neuroscience, CAS-Q3, JCR-Q2</strong> -->
+                  <strong>Frontiers in Neuroscience</strong>
+                  <br>
+                  <a href="https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1516868/full">Paper</a>
+      
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+                    Energy-efficient spikformer has been proposed by integrating the biologically plausible spiking neural network (SNN) and artificial transformer, whereby the spiking self-attention (SSA) is used to achieve both higher accuracy and lower computational cost. However, it seems that self-attention is not always necessary, especially in sparse spike-form calculation manners. In this article, we innovatively replace vanilla SSA (using dynamic bases calculating from Query and Key) with spike-form Fourier transform, wavelet transform, and their combinations (using fixed triangular or wavelets bases), based on a key hypothesis that both of them use a set of basis functions for information transformation. Hence, the Fourier-or-Wavelet-based spikformer (FWformer) is proposed and verified in visual classification tasks, including both static image and event-based video datasets. The FWformer can achieve comparable or even higher accuracies (0.4%–1.5%), higher running speed (9%–51% for training and 19%–70% for inference), reduced theoretical energy consumption (20%–25%), and reduced graphic processing unit (GPU) memory usage (4%–26%), compared to the standard spikformer. Our result indicates the continuous refinement of new transformers that are inspired either by biological discovery (spike-form), or information theory (Fourier or Wavelet transform), is promising.
+                  </details>
+                </td>
+              </tr>
+
+
+
 
 
 
