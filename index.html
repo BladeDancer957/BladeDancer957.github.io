@@ -145,6 +145,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             <!-- Modified section with collapsible list -->
           <ul>
             <!-- Latest 10 items (always visible) -->
+             <li><span style="color: gray" size="6px">[2025.05]</span> 🎉 Three papers: <a href=""><strong>BranchLoRA</strong></a>, <a href=""><strong>ProgLoRA</strong></a>, and <a href="https://arxiv.org/abs/2502.12988"><strong>CharacterBot</strong></a> are accepted by <strong>ACL2025</strong>. See you in Vienna!</li>
             <li><span style="color: gray" size="6px">[2025.03]</span> 🎉 One paper: <a href="https://ieeexplore.ieee.org/document/10938850"><strong>FINER</strong></a> is accepted by <strong>IEEE/ACM TASLP</strong>.</li>
             <li><span style="color: gray" size="6px">[2025.02]</span> 📣 Welcome to follow our latest survey on <a href="https://arxiv.org/abs/2502.17419"><strong>LLM Reasoning</strong></a>.</li>
             <li><span style="color: gray" size="6px">[2025.01]</span> 📣 Welcome to follow our latest survey on <a href="https://arxiv.org/abs/2501.07278"><strong>LLM Agent</strong></a>.</li>
@@ -154,10 +155,12 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             <li><span style="color: gray" size="6px">[2024.02]</span> 📣 Stay updated on our latest review articles regarding <a href="https://aclanthology.org/2024.findings-acl.738/"><strong>MM-LLMs</strong></a>.</li>
             <li><span style="color: gray" size="6px">[2023.10]</span> 🎉 One paper: <a href="https://link.springer.com/article/10.1007/s11633-023-1481-1"><strong>SPN-GA</strong></a> is accepted by <strong>Machine Intelligence Research (MIR)</strong>.</li>
             <li><span style="color: gray" size="6px">[2023.10]</span> 🎉 One paper: <a href="https://aclanthology.org/2023.emnlp-main.509/"><strong>CPFD</strong></a> is accepted by <strong>EMNLP2023</strong>. See you in Singapore!</li>
-            <li><span style="color: gray" size="6px">[2023.09]</span> 🎉 One paper: <a href="https://openreview.net/forum?id=LdvVd0bNyO"><strong>ODE-RNN4RL</strong></a> is accepted by <strong>NeurIPS2023</strong>.</li>
+
+         
             
             <!-- Collapsed items -->
             <ul id="collapsed-items" class="collapsed">
+              <li><span style="color: gray" size="6px">[2023.09]</span> 🎉 One paper: <a href="https://openreview.net/forum?id=LdvVd0bNyO"><strong>ODE-RNN4RL</strong></a> is accepted by <strong>NeurIPS2023</strong>.</li>
               <li><span style="color: gray" size="6px">[2023.08]</span> 🎉 One paper: <a href="https://dl.acm.org/doi/abs/10.1145/3583780.3615075"><strong>RDP</strong></a> is accepted by <strong>CIKM2023 (Oral)</strong>.</li>
               <li><span style="color: gray" size="6px">[2023.05]</span> 🎉 One paper: <a href="https://aclanthology.org/2023.acl-long.408/"><strong>DualGATs</strong></a> is accepted by <strong>ACL2023</strong>.</li>
               <li><span style="color: gray" size="6px">[2023.04]</span> 🎉 One paper: <a href="https://dl.acm.org/doi/abs/10.1145/3539618.3591970"><strong>DLD</strong></a> is accepted by <strong>SIGIR2023</strong>.</li>
@@ -228,7 +231,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
              <li>
                 <strong>Continual Instruction Tuning in (Multimodal) LLMs:</strong>
-                <a href="https://openreview.net/forum?id=O4RCFjVUBJ">[NeurIPS2024]</a>
+                <a href="https://openreview.net/forum?id=O4RCFjVUBJ">[NeurIPS2024]</a>, <a href="">[ACL2025a]</a>, <a href="">[ACL2025b]</a>
             </li>
 
              <li>
@@ -278,6 +281,41 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+                  <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/25.jpg' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>Enhancing Multimodal Continual Instruction Tuning with BranchLoRA</papertitle>
+                    </a>
+                    <br /><br />
+                     <strong>Duzhen Zhang*</strong>,
+                     Yong Ren*,
+                     Zhong-Zhi Li,
+                    Yahan Yu,
+                    Jiahua Dong, 
+                    Chenxing Li,
+                    Zhilong Ji,
+                    Jinfeng Bai
+                    <br /><br />
+                    <strong>ACL2025, CCF-A, Main Conference, Long Paper</strong>
+                    <br>
+                    <a href="">Paper</a>&nbsp/&nbsp
+                    <a href="">Code</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Multimodal Continual Instruction Tuning (MCIT) aims to finetune Multimodal Large Language Models (MLLMs) to continually align with human intent across sequential tasks. Existing approaches often rely on the Mixture-of-Experts (MoE) LoRA framework to preserve previous instruction alignments. However, these methods are prone to Catastrophic Forgetting (CF), as they aggregate all LoRA blocks via simple summation, which compromises performance over time. In this paper, we identify a critical parameter inefficiency in the MoELoRA framework within the MCIT context. Based on this insight, we propose BranchLoRA, an asymmetric framework to enhance both efficiency and performance. To mitigate CF, we introduce a flexible tuning-freezing mechanism within BranchLoRA, enabling branches to specialize in intra-task knowledge while fostering inter-task collaboration. Moreover, we incrementally incorporate task-specific routers to ensure an optimal branch distribution over time, rather than favoring the most recent task. To streamline inference, we introduce a task selector that automatically routes test inputs to the appropriate router without requiring task identity. Extensive experiments with the latest MCIT benchmark demonstrate that BranchLoRA significantly outperforms MoELoRA. Additionally, BranchLoRA consistently shows its superiority when scaled to different MLLM backbones and sizes.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
 
                    <tr>
                   <td style="padding:25px;width:35%;vertical-align:middle">
@@ -852,6 +890,41 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+
+                <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/26.jpg' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>Progressive LoRA for Multimodal Continual Instruction Tuning</papertitle>
+                  </a>
+                  <br /><br />
+                  Yahan Yu,
+                  <strong>Duzhen Zhang#</strong>,
+                  Yong Ren,
+                  Xuanle Zhao,
+                  Xiuyi Chen,
+                  Chenhui Chu
+                  <br /><br />
+                  <strong>ACL2025, Findings, Long Paper</strong>
+                  <br>
+                  <a href="">Paper</a>&nbsp/&nbsp
+                  <a href="">Code</a>
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+                   Multimodal Continual Instruction Tuning (MCIT) empowers Multimodal Large Language Models (MLLMs) to adapt to ever-evolving requirements without continuous costly retraining. However, MCIT faces challenges in mitigating Catastrophic Forgetting (CF) and enhancing Knowledge Transfer (KT). Existing works combine Mixture-of-Expert (MoE) and LoRA to address these. However, using a fixed number of shared LoRA blocks across tasks can lead to the overwriting of acquired knowledge, making MLLMs harder to handle CF and KT. Therefore, we propose the Progressive LoRA framework (ProgLoRA), which contains a progressive LoRA pool and trains a new LoRA block for each incremental task to reduce knowledge interference. Specifically, ProgLoRA has two key mechanisms: task-aware allocation for effectively leveraging acquired knowledge at current task and task recall for realigning the model with learned tasks. Additionally, considering different application scenarios, we design a static ProgLoRA for the more idealized basic setting and a dynamic ProgLoRA for the more realistic challenging setting. Experiments on the latest MCIT benchmark demonstrate that ProgLoRA outperforms existing approaches.
+                  </details>
+
+                  </p>
+                </td>
+              </tr>
+
+
                  <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
                   <div class="one">
@@ -932,6 +1005,40 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
           <!-- Content for Category C -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/27.jpg' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>Beyond Profile: From Surface-Level Facts to Deep Persona Simulation in LLMs</papertitle>
+                  </a>
+                  <br /><br />
+                  Zixiao Wang,
+                  <strong>Duzhen Zhang</strong>,
+                  Ishita Agarwal,
+                  Shen Gao,
+                  Le Song, 
+                  Xiuying Chen#
+                  <br /><br />
+                  <strong>ACL2025, Findings, Long Paper</strong>
+                  <br>
+                  <a href="https://arxiv.org/abs/2502.12988">Paper</a>&nbsp/&nbsp
+                  <a href="">Code</a>
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+                Previous approaches to persona simulation large language models (LLMs) have typically relied on learning basic biographical information, or using limited role-play dialogue datasets to capture a character's responses. However, a holistic representation of an individual goes beyond surface-level facts or conversations to deeper thoughts and thinking. In this work, we introduce CharacterBot, a model designed to replicate both the linguistic patterns and distinctive thought processes of a character. Using Lu Xun, a renowned Chinese writer, as a case study, we propose four training tasks derived from his 17 essay collections. These include a pre-training task focused on mastering external linguistic structures and knowledge, as well as three fine-tuning tasks: multiple-choice question answering, generative question answering, and style transfer, each aligning the LLM with Lu Xun's internal ideation and writing style. To optimize learning across these tasks, we introduce a CharLoRA parameter updating mechanism, where a general linguistic style expert collaborates with other task-specific experts to better study both the language style and the understanding of deeper thoughts. We evaluate CharacterBot on three tasks for linguistic accuracy and opinion comprehension, demonstrating that it significantly outperforms the baselines on our adapted metrics. We hope that this work inspires future research on deep character persona simulation LLM.
+                  </details>
+
+                  </p>
+                </td>
+              </tr>
+
 
               <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
@@ -1187,7 +1294,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 </a>
 <p align="left">
   <font size="2"><a href="https://people.eecs.berkeley.edu/~barron/">Website template</a> </font><br />
-   <font size="2">Last updated: Apr. 2025</font>
+   <font size="2">Last updated: May 2025</font>
 </p>
 
 
