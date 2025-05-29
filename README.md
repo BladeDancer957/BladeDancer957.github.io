@@ -1,1 +1,1 @@
-This is my homepage.
+Hi! This is my homepage.
