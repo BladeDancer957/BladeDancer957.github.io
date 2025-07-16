@@ -145,6 +145,9 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             <!-- Modified section with collapsible list -->
           <ul>
             <!-- Latest 10 items (always visible) -->
+
+          <li><span style="color: gray" size="6px">[2025.07]</span> 🎉 One paper: <a href=""><strong>SPT</strong></a> is accepted by <strong>IEEE/ACM TASLP</strong>.</li>
+
           <li><span style="color: gray" size="6px">[2025.05]</span> 📣 Welcome to follow our latest benchmark: <a href="https://arxiv.org/abs/2505.11942"><strong>LifelongAgentBench</strong></a>.</li>
 
 
@@ -164,13 +167,15 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
             <li><span style="color: gray" size="6px">[2024.09]</span> 🎉 One paper: <a href="https://openreview.net/forum?id=O4RCFjVUBJ"><strong>CIDM</strong></a> is accepted by <strong>NeurIPS2024</strong>.</li>
 
-            <li><span style="color: gray" size="6px">[2024.05]</span> 🎉 Two papers: <a href="https://aclanthology.org/2024.findings-acl.738/"><strong>MM-LLMs</strong></a> and <a href="https://aclanthology.org/2024.findings-acl.79/"><strong>WT&WF</strong></a> are accepted by <strong>ACL2024</strong>. See you in Bangkok!</li>
+  
           
 
           
           
             <!-- Collapsed items -->
             <ul id="collapsed-items" class="collapsed">
+
+                <li><span style="color: gray" size="6px">[2024.05]</span> 🎉 Two papers: <a href="https://aclanthology.org/2024.findings-acl.738/"><strong>MM-LLMs</strong></a> and <a href="https://aclanthology.org/2024.findings-acl.79/"><strong>WT&WF</strong></a> are accepted by <strong>ACL2024</strong>. See you in Bangkok!</li>
 
                 <li><span style="color: gray" size="6px">[2024.05]</span> 🎉 One paper: <a href="https://proceedings.mlr.press/v235/xu24p.html"><strong>PPAE</strong></a> is accepted by <strong>ICML2024</strong>.</li>
 
@@ -246,7 +251,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                 , <a href="https://dl.acm.org/doi/abs/10.1145/3583780.3615075">[CIKM2023]</a>
                 , <a href="https://aclanthology.org/2023.emnlp-main.509/">[EMNLP2023]</a>,
                 <a href="https://aclanthology.org/2024.findings-acl.79/">[ACL2024]</a>, 
-                <a href="https://ieeexplore.ieee.org/document/10938850">[IEEE/ACM TASLP2025]</a>
+                <a href="https://ieeexplore.ieee.org/document/10938850">[IEEE/ACM TASLP2025a]</a>,
+                <a href="">[IEEE/ACM TASLP2025b]</a>
             </li>
 
              <li>
@@ -755,6 +761,39 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   </p>
                 </td>
               </tr>
+
+
+                <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/32.jpg' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="">
+                      <papertitle>Exploring Stability-Plasticity Trade-offs for Continual Named Entity Recognition</papertitle>
+                    </a>
+                    <br /><br />
+                     <strong>Duzhen Zhang</strong>,
+                    Chenxing Li#,
+                    Jiahua Dong,
+                    Qi Liu, 
+                    Dong Yu
+                    <br /><br />
+      <!--               <strong>IEEE/ACM TASLP, CCF-B, CAS-Q2, JCR-Q1</strong> -->
+                    <strong>IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)</strong>
+                    <br>
+                    <a href="">Paper</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Continual Named Entity Recognition (CNER) is an evolving field that focuses on sequentially updating an existing model to incorporate new entity types. Previous CNER methods primarily utilize Knowledge Distillation (KD) to preserve prior knowledge and overcome catastrophic forgetting, strictly ensuring that the representations of old and new models remain consistent. Consequently, they often impart the model with excessive stability (i.e., retention of old knowledge) but limited plasticity (i.e., acquisition of new knowledge). To address this issue, we propose a Stability-Plasticity Trade-off (SPT) method for CNER that balances these aspects from both representation and weight perspectives. From the representation perspective, we introduce a pooling operation into the original KD, permitting a level of plasticity by consolidating representation dimensions. From the weight perspective, we dynamically merge the weights of old and new models, strengthening old knowledge while maintaining new knowledge. During this fusion, we implement a weight-guided selective mechanism to prioritize significant weights. Moreover, we develop a confidence-based pseudo-labeling approach for the current non-entity type, which predicts entity types using the old model to handle the semantic shift of the non-entity type, a challenge specific to CNER that has largely been ignored by previous methods. Extensive experiments across ten CNER settings on three benchmark datasets demonstrate that our SPT method surpasses previous CNER approaches, highlighting its effectiveness in achieving a suitable stability-plasticity trade-off.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
 
 
 
