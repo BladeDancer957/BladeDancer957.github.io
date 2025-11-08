@@ -146,6 +146,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
           <ul>
             <!-- Latest 10 items (always visible) -->
 
+          <li><span style="color: gray" size="6px">[2025.11]</span> 🎉 Two papers: <a href=""><strong>TinyChemVL</strong></a> and <a href=""><strong>CCVD</strong></a> are accepted by <strong>AAAI2026</strong>. 
+
          <li><span style="color: gray" size="6px">[2025.08]</span> 🎉 One paper: <a href="https://arxiv.org/abs/2504.17704"><strong>Safety in LRMs</strong></a> is accepted by <strong>EMNLP2025</strong>. See you in Suzhou!</li>
 
            <li><span style="color: gray" size="6px">[2025.07]</span> 📣 Welcome to follow our latest survey: <a href="https://arxiv.org/abs/2507.13334"><strong>Context Engineering for LLMs</strong></a>.</li>
@@ -165,18 +167,14 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
             <li><span style="color: gray" size="6px">[2025.03]</span> 🎉 One paper: <a href="https://ieeexplore.ieee.org/document/10938850"><strong>FINER</strong></a> is accepted by <strong>IEEE/ACM TASLP</strong>.</li>
 
-            <li><span style="color: gray" size="6px">[2025.02]</span> 📣 Welcome to follow our latest survey on <a href="https://arxiv.org/abs/2502.17419"><strong>Reasoning LLMs</strong></a>.</li>
-
-
     
-
-  
-          
 
           
           
             <!-- Collapsed items -->
             <ul id="collapsed-items" class="collapsed">
+
+                  <li><span style="color: gray" size="6px">[2025.02]</span> 📣 Welcome to follow our latest survey on <a href="https://arxiv.org/abs/2502.17419"><strong>Reasoning LLMs</strong></a>.</li>
 
                  <li><span style="color: gray" size="6px">[2025.01]</span> 📣 Welcome to follow our latest survey on <a href="https://arxiv.org/abs/2501.07278"><strong>LLM Agent</strong></a>.</li>
 
@@ -1184,6 +1182,82 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+               <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/34.jpg' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>TinyChemVL: Advancing Chemical Vision-Language Models via Efficient Visual Token Reduction and Complex Reaction Tasks</papertitle>
+                  </a>
+                  <br /><br />
+                  Xuanle Zhao,
+                  Shuxin Zeng,
+                  Xinyuan Cai,
+                  Xiang Cheng,
+                  <strong>Duzhen Zhang</strong>,
+                  Xiuyi Chen,
+                  Bo Xu
+                  <br /><br />
+       <!--            <strong></strong> -->
+                  <strong>AAAI2026</strong>
+                  <br>
+                  <a href="">Paper</a>&nbsp/&nbsp<a href="">Code</a>
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+               While Vision Language Models (VLMs) have demonstrated remarkable capabilities in general visual understanding, their application in the chemical domain has been limited, with previous works predominantly focusing on text and thus ignoring critical visual information like molecular structures. Current approaches that directly adopt standard VLMs for chemical tasks suffer from two primary issues: (i) computational inefficiency of processing entire chemical images with non-informative backgrounds. (ii) narrow scope on molecular-level tasks that restricts progress in chemical reasoning. In this work, we propose TinyChemVL, an efficient and powerful chemical VLM that leverages visual token reduction and reaction-level tasks to improve model efficiency and reasoning capacity. Furthermore, we propose ChemVR, a reaction-level benchmark for assessing vision-based reaction recognition and prediction tasks. Directly predicting reaction products from molecular images poses a non-trivial challenge, requiring models to integrate recognition and reasoning capacities. Our results demonstrate that with only 4B parameters, TinyChemVL achieves superior performance on both molecular and reaction tasks, while also demonstrating faster inference and training speeds compared to existing models. Notably, TinyChemVL outperforms ChemVLM while utilizing only 1/16th of the visual tokens. This work highlights a path toward building efficient yet powerful VLMs for chemical domains by co-designing model architecture and task complexity.
+                  </details>
+
+                  </p>
+                </td>
+              </tr>
+
+
+
+               <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/35.jpg' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>Bring Your Dreams to Life: Continual Text-to-Video Customization</papertitle>
+                  </a>
+                  <br /><br />
+                  Jiahua Dong,
+                  Xudong Wang,
+                  Wenqi Liang,
+                  Zongyan Han,
+                  Meng Cao,
+                  <strong>Duzhen Zhang</strong>,
+                  Hanbin Zhao,
+                  Zhi, Han,
+                  Salman Khan,
+                  Fahad Shahbaz Khan
+                  <br /><br />
+       <!--            <strong></strong> -->
+                  <strong>AAAI2026</strong>
+                  <br>
+                  <a href="">Paper</a>&nbsp/&nbsp<a href="">Code</a>
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+               Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention and attention-guided noise estimation. Experimental comparisons demonstrate that our CCVD model outperforms existing CTVG models.
+                  </details>
+
+                  </p>
+                </td>
+              </tr>
+
+             
+
+
                 <tr>
                 <td style="padding:25px;width:35%;vertical-align:middle">
                   <div class="one">
@@ -1661,7 +1735,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 </a>
 <p align="left">
   <font size="2"><a href="https://people.eecs.berkeley.edu/~barron/">Website template</a> </font><br />
-   <font size="2">Last updated: Oct. 2025</font>
+   <font size="2">Last updated: Nov. 2025</font>
 </p>
 
 
