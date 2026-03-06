@@ -469,6 +469,44 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
 
 
+              <tr>
+                <td style="padding:25px;width:35%;vertical-align:middle">
+                  <div class="one">
+                    <img src='images/7.png' width="250">
+                  </div>
+                </td>
+                <td style="padding:25px;width:70%;vertical-align:middle">
+                  <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Dong_Federated_Incremental_Semantic_Segmentation_CVPR_2023_paper.html">
+                    <papertitle>Federated Incremental Semantic Segmentation
+                    </papertitle>
+                  </a>
+                  <br /><br />
+                  Jiahua Dong*,
+                  <strong>Duzhen Zhang*</strong>,
+                  Yang Cong#,
+                  Wei Cong,
+                  <br>
+                  Henghui Ding,
+                  Dengxin Dai
+                  <br /><br />
+ <!--                  <strong>CVPR2023, CCF-A</strong> -->
+                     <strong>CVPR2023</strong>
+                  <br>
+                  <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Dong_Federated_Incremental_Semantic_Segmentation_CVPR_2023_paper.html">Paper</a>&nbsp/&nbsp
+                  <a href="https://github.com/JiahuaDong/FISS">Code</a>
+      
+                  <details align="justify">
+                    <summary>
+                      Details
+                    </summary>
+                    Federated learning-based semantic segmentation (FSS) has drawn widespread attention via decentralized training on local clients. However, most FSS models assume categories are fxed in advance, thus heavily undergoing forgetting on old categories in practical applications where local clients receive new categories incrementally while have no memory storage to access old classes. Moreover, new clients collecting novel classes may join in the global training of FSS, which further exacerbates catastrophic forgetting. To surmount the above challenges, we propose a Forgetting-Balanced Learning (FBL) model to address heterogeneous forgetting on old classes from both intra-client and inter-client aspects. Specifically, under the guidance of pseudo labels generated via adaptive class-balanced pseudo labeling, we develop a forgetting-balanced semantic compensation loss and a forgetting-balanced relation consistency loss to rectify intra-client heterogeneous forgetting of old categories with background shift. It performs balanced gradient propagation and relation consistency distillation within local clients. Moreover, to tackle heterogeneous forgetting from inter-client aspect, we propose a task transition monitor. It can identify new classes under privacy protection and store the latest old global model for relation distillation. Qualitative experiments reveal large improvement of our model against comparison methods. The code is available at https://github.com/JiahuaDong/FISS.         
+                  </details>
+                  </td>
+              </tr>
+
+
+
+
                      <tr>
                     <td style="padding:25px;width:35%;vertical-align:middle">
                       <div class="one">
@@ -733,37 +771,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                
 
 
-                <tr>
-                  <td style="padding:25px;width:35%;vertical-align:middle">
-                    <div class="one">
-                      <img src='images/32.jpg' width="250">
-                    </div>
-                  </td>
-                  <td style="padding:25px;width:70%;vertical-align:middle">
-                    <a href="https://ieeexplore.ieee.org/document/11112726">
-                      <papertitle>Exploring Stability-Plasticity Trade-offs for Continual Named Entity Recognition</papertitle>
-                    </a>
-                    <br /><br />
-                     <strong>Duzhen Zhang</strong>,
-                    Chenxing Li#,
-                    Jiahua Dong,
-                    Qi Liu, 
-                    Dong Yu#
-                    <br /><br />
-      <!--               <strong>IEEE/ACM TASLP, CCF-B, CAS-Q2, JCR-Q1</strong> -->
-                    <strong>IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP2025)</strong>
-                    <br>
-                    <a href="https://ieeexplore.ieee.org/document/11112726">Paper</a>
-                    <details align="justify">
-                      <summary>
-                        Details
-                      </summary>
-                      Continual Named Entity Recognition (CNER) is an evolving field that focuses on sequentially updating an existing model to incorporate new entity types. Previous CNER methods primarily utilize Knowledge Distillation (KD) to preserve prior knowledge and overcome catastrophic forgetting, strictly ensuring that the representations of old and new models remain consistent. Consequently, they often impart the model with excessive stability (i.e., retention of old knowledge) but limited plasticity (i.e., acquisition of new knowledge). To address this issue, we propose a Stability-Plasticity Trade-off (SPT) method for CNER that balances these aspects from both representation and weight perspectives. From the representation perspective, we introduce a pooling operation into the original KD, permitting a level of plasticity by consolidating representation dimensions. From the weight perspective, we dynamically merge the weights of old and new models, strengthening old knowledge while maintaining new knowledge. During this fusion, we implement a weight-guided selective mechanism to prioritize significant weights. Moreover, we develop a confidence-based pseudo-labeling approach for the current non-entity type, which predicts entity types using the old model to handle the semantic shift of the non-entity type, a challenge specific to CNER that has largely been ignored by previous methods. Extensive experiments across ten CNER settings on three benchmark datasets demonstrate that our SPT method surpasses previous CNER approaches, highlighting its effectiveness in achieving a suitable stability-plasticity trade-off.
-                    </details>
-
-                    </p>
-                  </td>
-                </tr>
+            
 
 
 
@@ -795,6 +803,40 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                         Details
                       </summary>
                       Federated Named Entity Recognition (FNER) boosts model training within each local client by aggregating the model updates of decentralized local clients, without sharing their private data. However, existing FNER methods assume fixed entity types and local clients in advance, leading to their ineffectiveness in practical applications. In a more realistic scenario, local clients receive new entity types continuously, while new local clients collecting novel data may irregularly join the global FNER training. This challenging setup, referred to here as Federated Incremental NER, renders the global model suffering from heterogeneous forgetting of old entity types from both intra-client and inter-client perspectives. To overcome these challenges, we propose a Local-Global Forgetting Defense (LGFD) model. Specifically, to address intra-client forgetting, we develop a structural knowledge distillation loss to retain the latent space's feature structure and a pseudo-label-guided inter-type contrastive loss to enhance discriminative capability over different entity types, effectively preserving previously learned knowledge within local clients. To tackle inter-client forgetting, we propose a task switching monitor that can automatically identify new entity types under privacy protection and store the latest old global model for knowledge distillation and pseudo-labeling. Experiments demonstrate significant improvement of our LGFD model over comparison methods.
+                    </details>
+
+                    </p>
+                  </td>
+                </tr>
+
+
+
+              <tr>
+                  <td style="padding:25px;width:35%;vertical-align:middle">
+                    <div class="one">
+                      <img src='images/32.jpg' width="250">
+                    </div>
+                  </td>
+                  <td style="padding:25px;width:70%;vertical-align:middle">
+                    <a href="https://ieeexplore.ieee.org/document/11112726">
+                      <papertitle>Exploring Stability-Plasticity Trade-offs for Continual Named Entity Recognition</papertitle>
+                    </a>
+                    <br /><br />
+                     <strong>Duzhen Zhang</strong>,
+                    Chenxing Li#,
+                    Jiahua Dong,
+                    Qi Liu, 
+                    Dong Yu#
+                    <br /><br />
+      <!--               <strong>IEEE/ACM TASLP, CCF-B, CAS-Q2, JCR-Q1</strong> -->
+                    <strong>IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP2025)</strong>
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/document/11112726">Paper</a>
+                    <details align="justify">
+                      <summary>
+                        Details
+                      </summary>
+                      Continual Named Entity Recognition (CNER) is an evolving field that focuses on sequentially updating an existing model to incorporate new entity types. Previous CNER methods primarily utilize Knowledge Distillation (KD) to preserve prior knowledge and overcome catastrophic forgetting, strictly ensuring that the representations of old and new models remain consistent. Consequently, they often impart the model with excessive stability (i.e., retention of old knowledge) but limited plasticity (i.e., acquisition of new knowledge). To address this issue, we propose a Stability-Plasticity Trade-off (SPT) method for CNER that balances these aspects from both representation and weight perspectives. From the representation perspective, we introduce a pooling operation into the original KD, permitting a level of plasticity by consolidating representation dimensions. From the weight perspective, we dynamically merge the weights of old and new models, strengthening old knowledge while maintaining new knowledge. During this fusion, we implement a weight-guided selective mechanism to prioritize significant weights. Moreover, we develop a confidence-based pseudo-labeling approach for the current non-entity type, which predicts entity types using the old model to handle the semantic shift of the non-entity type, a challenge specific to CNER that has largely been ignored by previous methods. Extensive experiments across ten CNER settings on three benchmark datasets demonstrate that our SPT method surpasses previous CNER approaches, highlighting its effectiveness in achieving a suitable stability-plasticity trade-off.
                     </details>
 
                     </p>
@@ -836,41 +878,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                   </tr>
 
 
-              <tr>
-                <td style="padding:25px;width:35%;vertical-align:middle">
-                  <div class="one">
-                    <img src='images/7.png' width="250">
-                  </div>
-                </td>
-                <td style="padding:25px;width:70%;vertical-align:middle">
-                  <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Dong_Federated_Incremental_Semantic_Segmentation_CVPR_2023_paper.html">
-                    <papertitle>Federated Incremental Semantic Segmentation
-                    </papertitle>
-                  </a>
-                  <br /><br />
-                  Jiahua Dong*,
-                  <strong>Duzhen Zhang*</strong>,
-                  Yang Cong#,
-                  Wei Cong,
-                  <br>
-                  Henghui Ding,
-                  Dengxin Dai
-                  <br /><br />
- <!--                  <strong>CVPR2023, CCF-A</strong> -->
-                     <strong>CVPR2023</strong>
-                  <br>
-                  <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Dong_Federated_Incremental_Semantic_Segmentation_CVPR_2023_paper.html">Paper</a>&nbsp/&nbsp
-                  <a href="https://github.com/JiahuaDong/FISS">Code</a>
-      
-                  <details align="justify">
-                    <summary>
-                      Details
-                    </summary>
-                    Federated learning-based semantic segmentation (FSS) has drawn widespread attention via decentralized training on local clients. However, most FSS models assume categories are fxed in advance, thus heavily undergoing forgetting on old categories in practical applications where local clients receive new categories incrementally while have no memory storage to access old classes. Moreover, new clients collecting novel classes may join in the global training of FSS, which further exacerbates catastrophic forgetting. To surmount the above challenges, we propose a Forgetting-Balanced Learning (FBL) model to address heterogeneous forgetting on old classes from both intra-client and inter-client aspects. Specifically, under the guidance of pseudo labels generated via adaptive class-balanced pseudo labeling, we develop a forgetting-balanced semantic compensation loss and a forgetting-balanced relation consistency loss to rectify intra-client heterogeneous forgetting of old categories with background shift. It performs balanced gradient propagation and relation consistency distillation within local clients. Moreover, to tackle heterogeneous forgetting from inter-client aspect, we propose a task transition monitor. It can identify new classes under privacy protection and store the latest old global model for relation distillation. Qualitative experiments reveal large improvement of our model against comparison methods. The code is available at https://github.com/JiahuaDong/FISS.         
-                  </details>
-                  </td>
-              </tr>
-
+            
 
 
                      <tr>
