@@ -1660,16 +1660,9 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
         <script>
           function extractPublicationYear(row) {
-            const yearPattern = /\b(19|20)\d{2}\b/;
-            const strongTags = row.querySelectorAll('strong');
-            for (const tag of strongTags) {
-              const match = tag.textContent.match(yearPattern);
-              if (match) {
-                return match[0];
-              }
-            }
-            const fallback = row.textContent.match(yearPattern);
-            return fallback ? fallback[0] : 'Other';
+            const matches = row.innerHTML.match(/(19|20)\d{2}/g);
+            if (!matches || matches.length === 0) return 'Other';
+            return String(Math.max.apply(null, matches.map(Number)));
           }
 
           function groupPublicationsByYear(categoryId) {
