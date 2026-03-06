@@ -305,6 +305,7 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
       
           </table>
 
+          <!-- Add buttons to toggle between categories -->
         <div style="text-align:center; margin-bottom: 20px;">
           <button class="expand-btn" onclick="toggleVisibility('categoryA')">First Author</button>
           <button class="expand-btn" onclick="toggleVisibility('categoryB')">Corresponding Author</button>
@@ -313,6 +314,8 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                  
 
         <div id="categoryA" class="publication-content">
+
+            <h3 style="margin-left:25px; margin-top:10px;">Conference Paper</h3>
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -715,6 +718,10 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             </tbody>
               </table> 
 
+
+
+                  <h3 style="margin-left:25px; margin-top:10px;">Journal Paper</h3>
+
     <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -1025,7 +1032,11 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
                 </tbody>
               </table>
         </div>    
+
+
         <div id="categoryB" class="publication-content collapsed">
+
+            <h3 style="margin-left:25px; margin-top:10px;">Conference Paper</h3>
 
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -1147,9 +1158,28 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
 
     
+
+
+<!--               <h3 style="margin-left:25px; margin-top:10px;">Journal Paper</h3>
+
+
+                       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+
+                   </tbody>
+        </table> -->
+
+
+
         </div>
 
+
+
         <div id="categoryC" class="publication-content collapsed">
+          <!-- Content for Category C -->
+
+        <h3 style="margin-left:25px; margin-top:10px;">Conference Paper</h3>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -1525,6 +1555,10 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
             </tbody>
         </table>
 
+
+
+        <h3 style="margin-left:25px; margin-top:10px;">Journal Paper</h3>
+
                       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
@@ -1659,64 +1693,6 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
 
 
         <script>
-          function extractPublicationYear(row) {
-            const yearPattern = /\b(19|20)\d{2}\b/;
-            const strongTags = row.querySelectorAll('strong');
-            for (const tag of strongTags) {
-              const match = tag.textContent.match(yearPattern);
-              if (match) {
-                return match[0];
-              }
-            }
-            const fallback = row.textContent.match(yearPattern);
-            return fallback ? fallback[0] : 'Other';
-          }
-
-          function groupPublicationsByYear(categoryId) {
-            const category = document.getElementById(categoryId);
-            if (!category) return;
-
-            const rows = Array.from(category.querySelectorAll('table > tbody > tr'));
-            const byYear = new Map();
-
-            rows.forEach(function (row) {
-              const year = extractPublicationYear(row);
-              if (!byYear.has(year)) byYear.set(year, []);
-              byYear.get(year).push(row);
-            });
-
-            const sortedYears = Array.from(byYear.keys()).sort(function (a, b) {
-              if (a === 'Other') return 1;
-              if (b === 'Other') return -1;
-              return Number(b) - Number(a);
-            });
-
-            category.innerHTML = '';
-            sortedYears.forEach(function (year) {
-              const title = document.createElement('h3');
-              title.style.marginLeft = '25px';
-              title.style.marginTop = '10px';
-              title.textContent = year;
-              category.appendChild(title);
-
-              const table = document.createElement('table');
-              table.style.width = '100%';
-              table.style.border = '0px';
-              table.style.borderSpacing = '0px';
-              table.style.borderCollapse = 'separate';
-              table.style.marginRight = 'auto';
-              table.style.marginLeft = 'auto';
-
-              const tbody = document.createElement('tbody');
-              byYear.get(year).forEach(function (row) {
-                tbody.appendChild(row);
-              });
-
-              table.appendChild(tbody);
-              category.appendChild(table);
-            });
-          }
-
           function toggleVisibility(categoryId) {
             const categories = ['categoryA', 'categoryB', 'categoryC'];
             categories.forEach(function (id) {
@@ -1728,8 +1704,6 @@ My name is Duzhen Zhang, and I am a postdoctoral researcher in AI4Science at <a 
               }
             });
           }
-
-          ['categoryA', 'categoryB', 'categoryC'].forEach(groupPublicationsByYear);
 
           // By default, show category A
           document.getElementById('categoryA').classList.remove('collapsed');
